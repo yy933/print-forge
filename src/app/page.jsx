@@ -27,6 +27,7 @@ export default function Home() {
         <Image
           src="/hero.jpg"
           alt="Hero"
+          priority
           width={800}
           height={500}
           className="w-[400px] h-auto"
