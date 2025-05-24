@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Home() {
   return (
     <main>
@@ -23,7 +24,13 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <img src="/hero.jpg" width={350} />
+        <Image
+          src="/hero.jpg"
+          alt="Hero"
+          width={800}
+          height={500}
+          className="w-[400px] h-auto"
+        />
       </section>
     </main>
   );
