@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from "next/image";
 
 export default function Navbar() {
   return (
@@ -8,13 +8,17 @@ export default function Navbar() {
         <Link href="/">
           <div className="relative cursor-pointer">
             {/* Desktop Logo */}
-            <img
+            <Image
+              width={100}
+              height={100}
               src="/printforge-icon.svg"
               alt="PrintForge Logo"
               className="w-[100px] h-auto hidden md:block"
             />
             {/* Mobile Logo */}
-            <img
+            <Image
+              width={40}
+              height={40}
               src="/printforge-icon.svg"
               alt="PrintForge Logo"
               className="w-[40px] h-auto block md:hidden"

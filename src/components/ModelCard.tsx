@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaRegHeart } from "react-icons/fa6";
 import Pill from "./Pill";
-
+import Image from "next/image";
 
 export default function ModelCard({ model }) {
   return (
@@ -15,7 +15,9 @@ export default function ModelCard({ model }) {
         role="article"
       >
         <div className="relative aspect-square">
-          <img
+          <Image
+            width={250}
+            height={250}
             src="/placeholder.jpg"
             alt={model.name}
             className="absolute inset-0 object-cover w-full h-full"
